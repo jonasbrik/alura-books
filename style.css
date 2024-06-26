@@ -1,0 +1,42 @@
+    @import url("estilos/cabecalho.css");
+    @import url("estilos/corpo.css");
+    @import url("estilos/rodape.css");
+
+.root{
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
+    --laranja: #eb9b00;
+          
+}
+body{
+    background-color: var(--cor-de-fundo);
+}
+h1{
+    background-color: white;
+}
+.lista-menu {
+    display: none;
+  }
+  .container__botao:checked ~ .lista-menu {
+    display: block;
+  }
+  .cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+  .lista-menu__titulo,
+  .lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+  }
+    .lista-menu__titulo{
+        color: var(--laranja);
+    }
